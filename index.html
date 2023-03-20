@@ -5,37 +5,50 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>ToDo List</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-  <div class="greeting">
-    <h1>What's up <input type="text" name="name" id="name" placeholder="name here"> </h1>
-  </div>
-  <div class="create-todo">
-    <h2>Create a todo</h2>
-    <form>
-      <h3>what's on your todo list? </h3>
-      <input type="text" name="content" id="content" placeholder="make a web app">
-      <h3>Pick a Category</h3>
-      <div class="options">
-        <input type="radio" name="category" id="business-category" value="business">
-        <p>Business</p>
-        <input type="radio" name="category" id="personal-category" value="personal">
-        <p>Personal</p>
-      </div>
-      <input type="submit" value="Add Todo">
-    </form>
-  </div>
-  <div class="todo-list">
-    <h4>Todo List</h4>
-    <div class="lists">
-      <div class="todo-cards">
-        <input type="checkbox" name="checkitem" id="checkitem">
-        <input type="text" value="make a web">
-        <div class="buttons">
-          <button class="btn">Edit</button>
-          <button class="btn">Delete</button>
+  <div class="container">
+    <div class="greeting">
+      <h1>What's up <input type="text" name="name" id="name" placeholder="name here" > </h1>
+    </div>
+    <div class="create-todo">
+      <h2>Create a todo</h2>
+      <form id="todo-create">
+        <h3>what's on your todo list? </h3>
+        <input type="text" name="content" id="content" placeholder="make a web project" required>
+        <h3>Pick a Category</h3>
+        <div class="options">
+          <label class="select-option">
+            <input type="radio" name="category" id="business-category" value="business">
+            <span class="circle business"></span>
+            <p>Business</p>
+          </label>
+          <label class="select-option">
+            <input type="radio" name="category" id="personal-category" value="personal">
+            <span class="circle personal"></span>
+            <p>Personal</p>
+          </label>
+
         </div>
+        <input type="submit" value="Add Todo">
+      </form>
+    </div>
+    <div class="todo-list">
+      <h4>Todo List</h4>
+      <div class="lists">
+        <!-- <div class="todo-cards">
+          <label>
+            <input type="checkbox" name="checkitem" id="checkitem">
+            <span class="circle"></span>
+          </label>
+          <input type="text" value="make a web">
+          <div class="buttons">
+            <button class="btn"><i class="fa-solid fa-pen-to-square edit"></i></button>
+            <button class="btn"><i class="fa-solid fa-trash delete"></i></button>
+          </div>
+        </div> -->
       </div>
     </div>
   </div>
