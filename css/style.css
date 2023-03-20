@@ -1,3 +1,15 @@
+:root {
+  --primary:#C1666B;
+  --business: #4281A4;
+  --personal: var(--primary);
+  --light: #eee;
+  --dark: #313154;
+  --danger: #ff5b57;
+  --shadow: 0 1px 3px rgba(0,0,0,0.1);
+  --business-glow: 0px 0px 4px rgba(66, 129, 164,0.7);
+  --personal-glow: 0px 0px 4px rgba(193, 102, 107,0.7) ;
+}
+
 * {
   margin: 0;
   padding: 0;

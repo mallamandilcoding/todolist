@@ -8,7 +8,37 @@
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-  <h1>mandil</h1>
+  <div class="greeting">
+    <h1>What's up <input type="text" name="name" id="name" placeholder="name here"> </h1>
+  </div>
+  <div class="create-todo">
+    <h2>Create a todo</h2>
+    <form>
+      <h3>what's on your todo list? </h3>
+      <input type="text" name="content" id="content" placeholder="make a web app">
+      <h3>Pick a Category</h3>
+      <div class="options">
+        <input type="radio" name="category" id="business-category" value="business">
+        <p>Business</p>
+        <input type="radio" name="category" id="personal-category" value="personal">
+        <p>Personal</p>
+      </div>
+      <input type="submit" value="Add Todo">
+    </form>
+  </div>
+  <div class="todo-list">
+    <h4>Todo List</h4>
+    <div class="lists">
+      <div class="todo-cards">
+        <input type="checkbox" name="checkitem" id="checkitem">
+        <input type="text" value="make a web">
+        <div class="buttons">
+          <button class="btn">Edit</button>
+          <button class="btn">Delete</button>
+        </div>
+      </div>
+    </div>
+  </div>
   <script src="js/index.js"></script>
 </body>
 </html>
